@@ -192,6 +192,8 @@ def refresh():
 
   parser = BeautifulSoup(browser.page_source, features="html.parser")
   json_data = html.unescape(parser.find('div', attrs={'id': 'json'}).text)
+  
+  browser.quit()
 
   data = json.loads(json_data)
 
