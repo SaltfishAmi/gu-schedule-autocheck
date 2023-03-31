@@ -2,7 +2,7 @@
 
 ## motivation
 
-It's registration season, but the Fall 2023 schedules of the Computer Science department sadly does not seem to be complete.
+It's registration season, but the Fall 2023 graduate schedules of the Computer Science department sadly does not seem to be complete.
 
 I'm so tempted to check it every ten minutes to see if there is any amazing new class for me.
 
@@ -16,7 +16,7 @@ And I know manually checking it a few times a day would take much less than 5 ho
 
 Quick sketch and dirty code, but works. I suck at Python. Honestly.
 
-No warranty. Use it only if you understand the code.
+No warranty. Use it only if you understand the code. I have many weird hardcodes that only works for me.
 
 ## license
 
