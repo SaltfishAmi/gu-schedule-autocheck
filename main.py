@@ -141,6 +141,7 @@ def diff(old, new):
 
 
 def post(driver, path, params):
+  # https://stackoverflow.com/questions/5660956
   driver.execute_script("""
   function post(path, params, method='post') {
     const form = document.createElement('form');
@@ -167,11 +168,11 @@ def post(driver, path, params):
 
 
 def refresh():
-  initURL = "https://bn-reg.uis.georgetown.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
-  postURL = "https://bn-reg.uis.georgetown.edu/StudentRegistrationSsb/ssb/term/search?mode=search"
-  postReq = {"term": "202330", "studyPath": "",
-             "studyPathText": "", "startDatepicker": "", "endDatepicker": ""}
-  jsonURL = "https://bn-reg.uis.georgetown.edu/StudentRegistrationSsb/ssb/searchResults/searchResults?txt_subject=COSC&txt_course_number_range=4000&txt_course_number_range_to=6999&txt_term=202330"
+  # user defined
+  initURL = ""
+  postURL = ""
+  postReq = {}
+  jsonURL = ""
 
   fireFoxOptions = webdriver.FirefoxOptions()
   fireFoxOptions.add_argument("-headless")
